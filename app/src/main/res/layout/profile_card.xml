@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/proOne"
+                android:src="@drawable/photo_2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teena"
+                android:fontFamily="@font/gilroy_eb"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#FFF"
+                android:padding="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/proTwo"
+                android:src="@drawable/photo_3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beena"
+                android:fontFamily="@font/gilroy_eb"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#FFF"
+                android:padding="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

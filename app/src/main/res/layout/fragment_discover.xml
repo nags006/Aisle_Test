@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_20sdp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/gilroy_eb"
+               android:textSize="@dimen/_30sdp"
+               android:textColor="@color/black"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:gravity="center_horizontal"
+               android:text="Notes" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/gilroy_sb"
+               android:textSize="@dimen/_18sdp"
+               android:textColor="@color/black"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:gravity="center_horizontal"
+               android:text="Personal messages to you" />
+
+           <include layout="@layout/profile_view"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="1">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.4"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/gilroy_eb"
+                       android:textSize="@dimen/_19sdp"
+                       android:textColor="@color/black"
+                       android:paddingLeft="@dimen/_25sdp"
+                       android:text="Interested In You" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/gilroy_sb"
+                       android:textSize="@dimen/_13sdp"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:paddingLeft="@dimen/_25sdp"
+                       android:text="Premium members can \nview all their likes at once" />
+
+
+               </LinearLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="@dimen/_5sdp"
+                   android:layout_weight="0.6">
+
+                 <com.google.android.material.button.MaterialButton
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical"
+                     android:layout_margin="@dimen/_5sdp"
+                     app:cornerRadius="@dimen/_20sdp"
+                     android:layout_centerInParent="true"
+                    app:backgroundTint="@color/yellow_home"
+                     android:textColor="@color/black"
+                     android:text="Upgrade"
+                     android:fontFamily="@font/gilroy_eb"/>
+
+               </RelativeLayout>
+
+
+           </LinearLayout>
+
+           <include
+               layout="@layout/profile_card"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="@dimen/_10sdp"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_5sdp"/>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

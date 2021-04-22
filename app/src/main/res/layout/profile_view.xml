@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meena , 23"
+            android:fontFamily="@font/gilroy_eb"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap to review 50+ notes"
+            android:fontFamily="@font/gilroy_sb"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#FFF"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

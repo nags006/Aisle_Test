@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Aisle</string>
+    <string name="getotp">Get OTP</string>
+</resources>
